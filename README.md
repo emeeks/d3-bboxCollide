@@ -6,7 +6,7 @@
 
 A bounding box constraint for [forceSimulation](https://github.com/d3/d3-force).
 
-[http://bl.ocks.org/emeeks/96c35bcee81f11a61541d94b0e0b62b4](Here's a data-driven example with 500 nodes.)
+[Here's a data-driven example with 500 nodes.](http://bl.ocks.org/emeeks/96c35bcee81f11a61541d94b0e0b62b4)
 
 You can include it as a `"collide"` constraint in your force simulation for rectangular nodes or bounding boxes around labels. It uses bounding boxes, which are [[],[]] arrays that give the top-left and bottom-right coordinates of a rectilinear space. You can set these bounding boxes manually or base them of the data of the node.
 
