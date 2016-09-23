@@ -1,0 +1,36 @@
+{
+  "name": "d3-bboxCollide",
+  "version": "1.0.0",
+  "description": "A bounding box collision detection constraint for d3 forceSimulation.",
+  "keywords": [
+    "d3",
+    "d3-module",
+    "network",
+    "forceSimulation",
+    "constraint",
+    "collide"
+  ],
+  "license": "Unlicense",
+  "main": "build/d3-bboxCollide.js",
+  "author": "Elijah Meeks"
+  "jsnext:main": "index",
+  "homepage": "https://github.com/emeeks/d3-bboxCollide",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emeeks/d3-bboxCollide.git"
+  },
+  "scripts": {
+    "pretest": "rm -rf build && mkdir build && rollup -f umd -n d3 -o build/d3-bboxCollide.js -- index.js",
+    "test": "tape 'test/**/*-test.js'",
+    "prepublish": "npm run test && uglifyjs build/d3-bboxCollide.js -c -m -o build/d3-bboxCollide.min.js",
+    "postpublish": "zip -j build/d3-bboxCollide.zip -- LICENSE README.md build/d3-bboxCollide.js build/d3-bboxCollide.min.js"
+  },
+  "devDependencies": {
+    "rollup": "0.27",
+    "tape": "4",
+    "uglify-js": "2"
+  },
+  "dependencies": {
+    "d3-quadtree": "1.0.1"
+  }
+}
