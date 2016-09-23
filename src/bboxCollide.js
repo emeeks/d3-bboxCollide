@@ -1,4 +1,4 @@
-import quadtree from 'd3-quadtree';
+import { quadtree } from 'd3-quadtree';
 
 export default function (bbox) {
 
@@ -48,8 +48,7 @@ export default function (bbox) {
             var cn = cornerNodes.length
 
         for (var k = 0; k < iterations; ++k) {
-        	console.log("quadtree", quadtree)
-          tree = quadtree.quadtree(cornerNodes, x, y).visitAfter(prepareCorners);
+          tree = quadtree(cornerNodes, x, y).visitAfter(prepareCorners);
 
           for (i = 0; i < cn; ++i) {
             var nodeI = ~~(i / 5);

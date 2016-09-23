@@ -20,7 +20,7 @@
     "url": "https://github.com/emeeks/d3-bboxCollide.git"
   },
   "scripts": {
-    "pretest": "rm -rf build && mkdir build && rollup -f umd -n d3 -o build/d3-bboxCollide.js -- index.js",
+    "pretest": "rm -rf build && mkdir build && rollup -f umd -n d3 -g d3-quadtree:d3 -o build/d3-bboxCollide.js -- index.js",
     "test": "tape 'test/**/*-test.js'",
     "prepublish": "npm run test && uglifyjs build/d3-bboxCollide.js -c -m -o build/d3-bboxCollide.min.js",
     "postpublish": "zip -j build/d3-bboxCollide.zip -- LICENSE README.md build/d3-bboxCollide.js build/d3-bboxCollide.min.js"
