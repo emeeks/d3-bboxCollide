@@ -12,7 +12,7 @@
   ],
   "license": "Unlicense",
   "main": "build/d3-bboxCollide.js",
-  "author": "Elijah Meeks"
+  "author": "Elijah Meeks",
   "jsnext:main": "index",
   "homepage": "https://github.com/emeeks/d3-bboxCollide",
   "repository": {
