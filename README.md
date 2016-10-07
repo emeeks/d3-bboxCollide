@@ -1,6 +1,6 @@
 # d3-bboxCollide
 
-`npm install bboxCollide-force`
+`npm install d3-bboxCollide`
 
 ![d3-bboxCollide](example.png "d3-bboxCollide")
 
