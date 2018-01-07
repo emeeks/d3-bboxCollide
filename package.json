@@ -1,6 +1,6 @@
 {
   "name": "d3-bboxCollide",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A bounding box collision detection constraint for d3 forceSimulation.",
   "keywords": [
     "d3",
