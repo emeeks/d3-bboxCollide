@@ -28,7 +28,7 @@
   "devDependencies": {
     "rollup": "0.27",
     "tape": "4",
-    "uglify-js": "2"
+    "uglify-js": "2.6.0"
   },
   "dependencies": {
     "d3-quadtree": "1.0.1"
